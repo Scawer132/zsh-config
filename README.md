@@ -11,5 +11,19 @@ Personal zsh configuration.
 
 ## Prompt
 
-Currently using Powerlevel10k.
-Will migrate to Oh My Posh.
+Using Oh My Posh.
+
+The theme is shared with PowerShell through:
+
+dotfiles/oh-my-posh/config.omp.json
+
+## Structure
+
+- .zshrc
+    Entry point
+
+- config/
+    Modular configuration files
+
+- legacy/
+    Historical configurations
