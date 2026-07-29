@@ -1,9 +1,9 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
 
 # True color
 export TERM=xterm-256color
@@ -34,7 +34,7 @@ export NVM_DIR="$HOME/.config/nvm"
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.config/oh-my-zsh"
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
@@ -107,7 +107,7 @@ function y() {
 fpath=(~/.config/zsh/completions $fpath)
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.config/zsh/p10k.zsh ]] || source ~/.config/zsh/p10k.zsh   # disabled: using p10k-omp.zsh
+# [[ ! -f ~/.config/zsh/p10k.zsh ]] || source ~/.config/zsh/p10k.zsh   # disabled: using p10k-omp.zsh
 # [[ ! -f ~/.config/zsh/p10k-omp.zsh ]] || source ~/.config/zsh/p10k-omp.zsh
 
 # Load the existing Bash environment variables
@@ -130,3 +130,6 @@ export LC_ALL="zh_CN.UTF-8"
 
 # opencode
 export PATH=/home/lenovo/.local/share/opencode/bin:$PATH
+
+# Oh My Posh prompt
+eval "$(oh-my-posh init zsh --config "$HOME/dotfiles/oh-my-posh/config.omp.json")"
