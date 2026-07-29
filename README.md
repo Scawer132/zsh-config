@@ -13,9 +13,7 @@ Personal zsh configuration.
 
 Using Oh My Posh.
 
-The theme is shared with PowerShell through:
-
-dotfiles/oh-my-posh/config.omp.json
+The theme is managed by the [omp-config](https://github.com/Scawer132/omp-config) repository and shared with PowerShell as a submodule at `dotfiles/oh-my-posh/`.
 
 ## Structure
 
@@ -27,3 +25,7 @@ dotfiles/oh-my-posh/config.omp.json
 
 - legacy/
     Historical configurations
+
+## Submodule
+
+This repository is used as a submodule of [dotfiles](https://github.com/Scawer132/dotfiles). The oh-my-posh theme is a separate submodule — to modify the prompt, edit the omp-config repository directly.
